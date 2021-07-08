@@ -10,3 +10,135 @@ What data type would best represent:
     The email addresses collected from a registration form? - dict
     Information about applicants to Codeup's data science program? - dict
 
+In [1]: type(99.9)
+Out[1]: float
+
+In [2]: type("False")
+Out[2]: str
+
+In [3]: type(False)
+Out[3]: bool
+
+In [4]: tyep('0')
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-4-b0ed817bf615> in <module>
+----> 1 tyep('0')
+
+NameError: name 'tyep' is not defined
+
+In [5]: type('0')
+Out[5]: str
+
+In [6]: type(0)
+Out[6]: int
+
+In [7]: type(True)
+Out[7]: bool
+
+In [8]: type('True')
+Out[8]: str
+
+In [9]: type([{}])
+Out[9]: list
+
+In [10]: type({'a': []})
+Out[10]: dict
+
+In [11]: '1' + 2
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-11-20b2518fe802> in <module>
+----> 1 '1' + 2
+
+TypeError: can only concatenate str (not "int") to str
+
+In [12]: 6 % 4
+Out[12]: 2
+
+In [13]: type(6 % 4)
+Out[13]: int
+
+In [14]: type(type(6 % 4))
+Out[14]: type
+
+In [15]: '3 + 4 is' + 3 + 4
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-15-64ee0e30bbe6> in <module>
+----> 1 '3 + 4 is' + 3 + 4
+
+TypeError: can only concatenate str (not "int") to str
+
+In [16]: 0 < 0
+Out[16]: False
+
+In [17]: 'False' == False
+Out[17]: False
+
+In [18]: True == 'True'
+Out[18]: False
+
+In [19]: 5 >= -5
+Out[19]: True
+
+In [20]: True or "42"
+Out[20]: True
+
+In [21]: 6 % 5
+Out[21]: 1
+
+In [22]: 5 < 4 and 1 == 1
+Out[22]: False
+
+In [23]: 'codeup' == 'codeup' and 'codeup' == 'Codeup'
+Out[23]: False
+
+In [24]: 4 >= 0 and 1 !== '1'
+  File "<ipython-input-24-28fe0c9082c3>", line 1
+    4 >= 0 and 1 !== '1'
+                   ^
+SyntaxError: invalid syntax
+
+
+In [25]: 6 % 3 == 0
+Out[25]: True
+
+In [26]: 5 % 2 != 0
+Out[26]: True
+
+In [27]: [1] + 2
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-27-54324b7054ad> in <module>
+----> 1 [1] + 2
+
+TypeError: can only concatenate list (not "int") to list
+
+In [28]: [1] + [2]
+Out[28]: [1, 2]
+
+In [29]: [1] * 2
+Out[29]: [1, 1]
+
+In [30]: [1] * [2]
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-30-887f6473eaff> in <module>
+----> 1 [1] * [2]
+
+TypeError: can't multiply sequence by non-int of type 'list'
+
+In [31]: [] + [] == []
+Out[31]: True
+
+In [32]: {} + {}
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-32-03eea6c7a00d> in <module>
+----> 1 {} + {}
+
+TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+
+
+
