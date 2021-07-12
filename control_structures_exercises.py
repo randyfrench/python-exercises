@@ -63,3 +63,42 @@ while x > -15:
 
 #Create a while loop that starts at 2, and displays the number squared on each line while the number is
  #less than 1,000,000. Output should equal:
+x = 2
+while x < 10000000:
+        print(x)
+        x = x **2
+
+#Write a loop that uses print to create the output shown below.
+#100 down to 5
+x = 100
+while x > 0:
+        print(x)
+        x = x - 5
+
+#For Loops
+
+    #Write some code that prompts the user for a number, then shows a multiplication table up through 10 for that number.
+
+    #For example, if the user enters 7, your program should output:
+number = int(input("Enter your number: "))
+for table in range(1, 11):
+     if number == 7:
+        print("{0} x {1} = {2}".format(number, table, (number * table)))
+     else:
+        print("Try the number 7")
+
+#7 x 1 = 7
+#7 x 2 = 14
+#7 x 3 = 21
+#7 x 4 = 28
+#7 x 5 = 35
+#7 x 6 = 42
+#7 x 7 = 49
+#7 x 8 = 56
+#7 x 9 = 63
+#7 x 10 = 70
+
+for number in range( 1, 10):
+        for tub in range(1, number + 1):
+           print(number, end="")
+        print()
