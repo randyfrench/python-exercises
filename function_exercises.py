@@ -91,7 +91,7 @@ handle_commas(string)
     #     leading and trailing whitespace should be removed
     #     everything should be lowercase
     #     spaces should be replaced with underscores
-    #     for example:
+    #     for example: 
     #         Name will become name
     #         First Name will become first_name
     #         % Completed will become completed
