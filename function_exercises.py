@@ -121,11 +121,72 @@ remove_vowels(string)
 #         First Name will become first_name
 #         % Completed will become completed
 
-#def normalize_name(x):
+# Building it out
+def remove_symbols(name):
+    '''
+    Removes symbols from a string
+    '''
+    
+    cleaned = ""
+
+    for char in name:
+
+        if (char.isalnum() == True) or (char == " "):
+
+            cleaned += char
+        
+    return cleaned
+
+    def front_and_back(name):
+   # '''
+    #Removes leading numbers and leading and trailing spaces from a string
+   # '''
+    
+    while name[0].isalpha() == False:
+    
+        name = name[1:]
+
+    return name.strip()
+
+    def normalize_name(name):
+    name = remove_symbols(name)  # Removes symbols
+    
+    name = front_and_back(name)  # Removes leading numbers and leading and trailing white space
+    
+    name = name.replace(" ", "_") # replace spaces with underscores
+
+    name = name.lower() # lowercase string
+
+    return name
+
+    name = "1 2 3 $()&^$( T#%^H#%^i%^s%^ i%^&S %&(*(a v$%&AlI#%^d p#%^YTh#%^on id#%^%&en$%&TI#$^%%$&^*Fi@$%^*(er  #^#^#@"
+
+normalize_name(name)
 
     # 11. Write a function named cumulative_sum that accepts a list of numbers and returns a list 
     # that is the cumulative sum of the numbers in the list.
     #     cumulative_sum([1, 1, 1]) returns [1, 2, 3]
     #     cumulative_sum([1, 2, 3, 4]) returns [1, 3, 6, 10]
-#def cumulative_sum(x)
+
+def cumulative_sum(input_list):
+    
+    sum_list = []
+
+    total = 0
+
+    for num in input_list:
+    
+        total += num
+    
+        sum_list.append(total)
+        
+    return sum_list
+
+    input_list = [1,1,1]
+
+cumulative_sum(input_list)
+
+input_list = [1,2,3,4]
+
+cumulative_sum(input_list)
   
